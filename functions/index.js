@@ -261,7 +261,7 @@ app.post("/scream", FBauth, (req, res) => {
     userImage: req.user.imageUrl,
     createdAt: new Date().toISOString(),
     likeCount: 0,
-    commentCount: 0,
+    commentCount: 0, 
   };
 
   const { valid, errors } = validateScreamData(newScream);
